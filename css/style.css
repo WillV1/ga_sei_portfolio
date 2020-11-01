@@ -5,20 +5,20 @@
 }
 
 :root {
-  --ff-primary: ;
-  --ff-secondary: ;
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Montserrat', sans-serif;
 
-  --fw-reg: ;
-  --fw-bold: ;
+  --fw-reg: 400;
+  --fw-bold: 700;
 
   --clr-light: #fff;
-  --clr-dark: ;
-  --clr-accent: ;
+  --clr-dark: #1d1919;
+  --clr-accent: #00bcd4;
 
-  --fs-h1: ;
-  --fs-h2: ;
-  --fs-h4: ;
-  --fs-body: ;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h4: 1.25rem;
+  --fs-body: 1rem;
 
   --bs: 0.25em 0.25em .75em rgba(0,0,0,.25), 
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -26,10 +26,10 @@
 
 @media (min-width: 800px) {
   :root {
-    --fs-h1: ;
-    --fs-h2: ;
-    --fs-h4: ;
-    --fs-body: ;
+    --fs-h1: 4.5;
+    --fs-h2: 3.75rem;
+    --fs-h4: 1.5rem;
+    --fs-body: 1.125rem;
   }
 }
 
@@ -126,5 +126,52 @@ nav { display: none; }
     position: relative;
     left: -1.5em;
     width: calc(100% + 1.5em)
+  }
+}
+
+/* About me */
+
+.about-me {
+  background-color: var(--clr-dark);
+  background-image: url();
+  background-size: cover;
+  color: var(--cl-light);
+  text-align: center;
+}
+
+.card {
+
+}
+
+.section-title-about {
+  color: var(--clr-accent);
+  position: relative;
+}
+
+.section-title-about::after {
+  content: '';
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  opacity: 0.25;
+}
+
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .about {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .card + .card {
+    margin-left: 2em;
+
   }
 }
