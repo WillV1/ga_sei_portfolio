@@ -1,0 +1,24 @@
+*,
+*::before, 
+*::after {
+  box-sizing: border-box
+}
+
+:root {
+  --ff-primary: ;
+  --ff-secondary: ;
+
+  --fw-reg: ;
+  --fw-reg: ;
+
+  --fs-h1: ;
+  --fs-h2: ;
+  --fs-h4: ;
+  --fs-body: ;
+}
+
+@media (min-width: 800px) {
+  :root {
+    
+  }
+}
