@@ -51,6 +51,11 @@ img {
   max-width: 100%
 }
 
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
 h1, h2, h4 {
   line-height: 1;
   margin: 0;
@@ -133,14 +138,10 @@ nav { display: none; }
 
 .about-me {
   background-color: var(--clr-dark);
-  background-image: url();
+  background-image: url('../images/nate-grant-QQ9LainS6tI-unsplash.jpg');
   background-size: cover;
   color: var(--cl-light);
   text-align: center;
-}
-
-.card {
-
 }
 
 .section-title-about {
@@ -174,4 +175,96 @@ nav { display: none; }
     margin-left: 2em;
 
   }
+}
+
+/* My projects */
+
+.my-projects {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Form  */
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  display: inline-block;
+  padding: .5em 2.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  cursor: pointer;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+input[type=submit]:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  border-radius: 5px;
+  background: var(--clr-dark);
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background: #111;
+  color: var(--clr-accent);
+  text-align: center;
+  padding: 2.5em 0;
+}
+
+.footer a {color: inherit}
+
+.footer-link:hover,
+.social-list-link:hover {
+
 }
