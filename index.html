@@ -28,9 +28,9 @@
     </button>
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item"><a href="about" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="projects" class="nav-link">Projects</a></li>
-        <li class="nav-item"><a href="contacts" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -44,27 +44,27 @@
 
   <!-- About Me -->
   <section class="about-me" id="about">
-    <h2 class="section-title section-title-about">About me</h2>
+    <h2 class="section-title section-title-heading">About me</h2>
     <div class="about">
       <div class="card">
-        <i class="material-icons large">person</i>
-        <h4>Client-Focused</h4>
-        <p>I am passionate about 
+        <i class="material-icons large section-about">person</i>
+        <h4 class="section-about">Client-Focused</h4>
+        <p class="section-about">I am passionate about 
           developing applications, with a focus on mobile-first design and development.
           I aim to understand how to best engage users for an impactful user experience.</p>
       </div>
 
       <div class="card">
-        <i class="material-icons large">build</i>
-        <h4>Problem-Solver</h4>
-        <p>With a background in accounting and education, I have extensive training in 
+        <i class="material-icons large section-about">build</i>
+        <h4 class="section-about">Problem-Solver</h4>
+        <p class="section-about">With a background in accounting and education, I have extensive training in 
           methodical problem-solving.</p>
       </div>
 
       <div class="card">
-        <i class="material-icons large">group</i>
-        <h4>Team-Producer</h4>
-        <p>With the ability to florish individually and within teams, I’m eager to 
+        <i class="material-icons large section-about">group</i>
+        <h4 class="section-about">Team-Producer</h4>
+        <p class="section-about">With the ability to florish individually and within teams, I’m eager to 
           combine my analytical, communication, and technical 
           skills as part of a real-time problem solving, quality-driven team.</p>
       </div>
@@ -74,7 +74,7 @@
 
   <!-- Projects -->
   <section class="my-projects" id="projects">
-    <h2 class="section-title">My projects</h2>
+    <h2 class="section-title section-title-heading">My projects</h2>
     <div class="portfolio">
       <div class="portfolio-item">
         <div class="portfolio-image">
@@ -110,12 +110,13 @@
 
   <!-- Form  -->
   <section class="container" id="contact">
+    <h2 class="section-title section-title-heading">Contact me</h2>
     <form action="" method="">
       <div class="row">
         <div class="col-25">
           <label for="fname">First Name</label>
         </div>
-        <div class="col-75">
+        <div class="col-50">
           <input type="text" id="fname" name="firstname" placeholder="First Name"
           required>
         </div>
@@ -125,7 +126,7 @@
         <div class="col-25">
           <label for="lname">Last Name</label>
         </div>
-        <div class="col-75">
+        <div class="col-50">
           <input type="text" id="lname" name="lastname" placeholder="Last Name"
           required>
         </div>
@@ -135,7 +136,7 @@
         <div class="col-25">
           <label for="email">Email</label>
         </div>
-        <div class="col-75">
+        <div class="col-50">
           <input type="email" id="email" name="email" placeholder="Email Address"
           required>
         </div>
@@ -145,7 +146,7 @@
         <div class="col-25">
           <label for="comment">Comment</label>
         </div>
-        <div class="col-75">
+        <div class="col-50">
           <textarea id="comment" name="comment" placeholder="Write comment here"
           style="height:100px"></textarea>
         </div>

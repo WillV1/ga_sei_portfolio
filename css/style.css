@@ -26,7 +26,7 @@
 
 @media (min-width: 800px) {
   :root {
-    --fs-h1: 4.5;
+    --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;
     --fs-h4: 1.5rem;
     --fs-body: 1.125rem;
@@ -82,12 +82,20 @@ h4 { font-size: var(--fs-h4)}
   font-size: var(--fs-h4)
 }
 
-.section-subtitle-intro,
-.section-subtitle-about {
+.section-subtitle-intro {
   background: var(--clr-accent);
   padding: .25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
+}
+
+.section-about {
+  color: var(--clr-light)
+}
+
+.section-title-heading {
+  color: var(--clr-accent);
+  position: relative;
 }
 
 /* Header */
@@ -247,11 +255,6 @@ header {
   text-align: center;
 }
 
-.section-title-about {
-  color: var(--clr-accent);
-  position: relative;
-}
-
 .section-title-about::after {
   content: '';
   display: block;
@@ -294,7 +297,7 @@ header {
 }
 
 /* Form  */
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -327,7 +330,7 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background: var(--clr-dark);
+  background: #f2f2f2;
   padding: 20px;
 }
 
@@ -337,9 +340,9 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
-.col-75 {
+.col-50 {
   float: left;
-  width: 75%;
+  width: 50%;
   margin-top: 6px;
 }
 
