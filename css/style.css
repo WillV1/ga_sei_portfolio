@@ -201,6 +201,7 @@ header {
 .hamburger::before {top: 6px}
 .hamburger::after {bottom: 6px}
 
+
 /* Intro Section */
 
 .intro {
@@ -294,6 +295,7 @@ header {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 50px;
 }
 
 /* Form  */
