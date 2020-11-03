@@ -37,14 +37,32 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+/* body {
   background: var(--clr-light);
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6
+} */
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
 }
+
+.page-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
 
 section {
   padding: 5em 2em;
@@ -96,7 +114,50 @@ h4 { font-size: var(--fs-h4)}
 
 /* Header */
 
-header {
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.7)
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.nav ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--clr-light)
+}
+
+.nav ul li a:hover {
+  color: var(--clr-accent)
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  scroll-snap-type: center;
+}
+
+/* header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
@@ -196,14 +257,14 @@ header {
 }
 
 .hamburger::before {top: 6px}
-.hamburger::after {bottom: 6px}
+.hamburger::after {bottom: 6px} */
 
 
 /* Intro Section */
 
 .intro {
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .intro-img {
@@ -252,7 +313,7 @@ header {
   background-size: cover;
   color: var(--cl-light);
   text-align: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .section-title-about::after {
