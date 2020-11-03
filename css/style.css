@@ -203,6 +203,7 @@ header {
 
 .intro {
   position: relative;
+  min-height: 100vh;
 }
 
 .intro-img {
@@ -251,6 +252,7 @@ header {
   background-size: cover;
   color: var(--cl-light);
   text-align: center;
+  min-height: 100vh;
 }
 
 .section-title-about::after {
@@ -327,7 +329,11 @@ input[type=submit]:hover {
   transform: scale(1.1);
 }
 
-.form-container {
+.submit {
+  text-align: center;
+}
+
+.container {
   border-radius: 5px;
   background: #f2f2f2;
   padding: 20px;
