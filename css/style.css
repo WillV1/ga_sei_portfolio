@@ -89,16 +89,13 @@ h4 { font-size: var(--fs-h4)}
   margin-bottom: 1em;
 }
 
-.section-about {
-  color: var(--clr-light)
-}
-
 .section-title-heading {
   color: var(--clr-accent);
   position: relative;
 }
 
 /* Header */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -250,7 +247,7 @@ header {
 
 .about-me {
   background-color: var(--clr-dark);
-  background-image: url('../images/nate-grant-QQ9LainS6tI-unsplash.jpg');
+  background-image: url('../images/annie-spratt-W58TYhki3nU-unsplash.jpg');
   background-size: cover;
   color: var(--cl-light);
   text-align: center;
@@ -330,7 +327,7 @@ input[type=submit]:hover {
   transform: scale(1.1);
 }
 
-.container {
+.form-container {
   border-radius: 5px;
   background: #f2f2f2;
   padding: 20px;
